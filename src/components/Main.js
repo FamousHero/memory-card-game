@@ -4,7 +4,7 @@ import Card,  {createCards} from './Card'
 import '../styles/main.css'
 const Main = () => {
     const [cards, setCards] = useState([]);
-    let pickedCards = new Set();
+    let pickedCards = new Set(); //doesnt affect render so don't use state
     const images = useMemo(()=>{
         let result = {};
         function importAll(context){
@@ -16,12 +16,12 @@ const Main = () => {
         return importAll(require.context('../imgs', false, /\.jpg/));
     }, []);
     useEffect(() => {
-        setCards(createCards(images, onClick, pickedCards));
+        console.log('init cards');
+        setCards(createCards(images, handleSetCards, pickedCards));
         
     }, []);
-    const onClick = ()=>{
-        console.log('generating new card set');
-        setCards(createCards(images, onClick));
+    const handleSetCards=() =>{
+        setCards(createCards(images, handleSetCards, pickedCards))
     }
   return (
     <div className='main'>

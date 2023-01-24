@@ -1,28 +1,33 @@
 
-import React, { useEffect, useState } from 'react'
-import Card from './Card'
+import React, { useEffect, useMemo, useState } from 'react'
+import Card,  {createCards} from './Card'
 import '../styles/main.css'
 const Main = () => {
     const [cards, setCards] = useState([]);
-    useEffect(() => {
-        setCards(createCards());
+    let pickedCards = new Set();
+    const images = useMemo(()=>{
+        let result = {};
+        function importAll(context){
+            context.keys().map((key)=>{
+                result[key.replace('./','')] = context(key);
+            });
+            return result;
+        }
+        return importAll(require.context('../imgs', false, /\.jpg/));
     }, []);
+    useEffect(() => {
+        setCards(createCards(images, onClick, pickedCards));
+        
+    }, []);
+    const onClick = ()=>{
+        console.log('generating new card set');
+        setCards(createCards(images, onClick));
+    }
   return (
     <div className='main'>
         {cards}
     </div>
   )
-}
-
-const createCards = () => {
-    let cardArray = [];
-    console.log('creating');
-    for(let i = 0; i < 10; ++i){
-        let cardSelected = Math.floor(Math.random() * 10);
-        console.log(cardSelected);
-        cardArray.push(<Card cardStyle={'card'} innerStyle={'inner-card'} />);
-    }
-    return cardArray;
 }
 
 

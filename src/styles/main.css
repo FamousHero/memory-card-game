@@ -1,6 +1,6 @@
 
 .card{
-    width: 100px;
+    width: fit-content;
     height: 150px;
     padding: 20px;
     background-color: darkblue;
@@ -17,4 +17,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+.img{
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
 }

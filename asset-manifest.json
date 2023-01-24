@@ -1,16 +1,33 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.073c9b0a.css",
-    "main.js": "/memory-card/static/js/main.e89055d0.js",
-    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
-    "static/media/logo.svg": "/memory-card/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/memory-card/static/css/main.2a72df0f.css",
+    "main.js": "/memory-card/static/js/main.ac5c7bda.js",
+    "static/media/11.jpg": "/memory-card/static/media/11.e0c608d385fa7a90ae9c.jpg",
+    "static/media/12.jpg": "/memory-card/static/media/12.7ea967f6ef65e26da73c.jpg",
+    "static/media/7.jpg": "/memory-card/static/media/7.14e3bc5b5e398cb12b32.jpg",
+    "static/media/9.jpg": "/memory-card/static/media/9.ba7fea67522349d217a3.jpg",
+    "static/media/13.jpg": "/memory-card/static/media/13.6b996fba59e7ae3dbeb5.jpg",
+    "static/media/6.jpg": "/memory-card/static/media/6.18d25d2bb099fbe113d4.jpg",
+    "static/media/5.jpg": "/memory-card/static/media/5.6791451b489335a06e8c.jpg",
+    "static/media/14.jpg": "/memory-card/static/media/14.6bbe8a87366072767fbd.jpg",
+    "static/media/17.jpg": "/memory-card/static/media/17.97a70b2a00394ce848d6.jpg",
+    "static/media/19.jpg": "/memory-card/static/media/19.787698abeb4aee398ff7.jpg",
+    "static/media/16.jpg": "/memory-card/static/media/16.236a7604b8ed3e5b3ada.jpg",
+    "static/media/10.jpg": "/memory-card/static/media/10.c4d68decdca26f9eddf2.jpg",
+    "static/media/2.jpg": "/memory-card/static/media/2.8e45962a6196268fbe88.jpg",
+    "static/media/4.jpg": "/memory-card/static/media/4.20581446beeab9f0b558.jpg",
+    "static/media/0.jpg": "/memory-card/static/media/0.75dbc2b908bce02d9724.jpg",
+    "static/media/15.jpg": "/memory-card/static/media/15.30bc54064f67954d6756.jpg",
+    "static/media/1.jpg": "/memory-card/static/media/1.0bb10658eade383ea19b.jpg",
+    "static/media/3.jpg": "/memory-card/static/media/3.bf03b61c2bdb1b504a15.jpg",
+    "static/media/8.jpg": "/memory-card/static/media/8.02a8df5bce221b0adecc.jpg",
+    "static/media/18.jpg": "/memory-card/static/media/18.aa91eb6b4c7e9d88eccd.jpg",
     "index.html": "/memory-card/index.html",
-    "main.073c9b0a.css.map": "/memory-card/static/css/main.073c9b0a.css.map",
-    "main.e89055d0.js.map": "/memory-card/static/js/main.e89055d0.js.map",
-    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+    "main.2a72df0f.css.map": "/memory-card/static/css/main.2a72df0f.css.map",
+    "main.ac5c7bda.js.map": "/memory-card/static/js/main.ac5c7bda.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.e89055d0.js"
+    "static/css/main.2a72df0f.css",
+    "static/js/main.ac5c7bda.js"
   ]
 }

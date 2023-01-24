@@ -1,6 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from 'react'
-import Card,  {createCards} from './Card'
+import {createCards} from './Card'
 import '../styles/main.css'
 const Main = ({incrementScore, resetScore}) => {
     const [cards, setCards] = useState([]);

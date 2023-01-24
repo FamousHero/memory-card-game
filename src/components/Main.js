@@ -16,7 +16,6 @@ const Main = ({incrementScore, resetScore}) => {
         return importAll(require.context('../imgs', false, /\.jpg/));
     }, []);
     useEffect(() => {
-        console.log('init cards');
         setCards(createCards(images, handleSetCards, pickedCards, incrementScore, resetScore));
         
     }, []);

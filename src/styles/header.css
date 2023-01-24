@@ -1,0 +1,22 @@
+
+.header{
+    font-size: 1.4em;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    color: white;
+  background-color: #24272e;
+  align-items: center;
+
+}
+
+.title{
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: rgb(202, 163, 111);
+
+}
+.scores{
+    color: rgb(153, 118, 72);
+}

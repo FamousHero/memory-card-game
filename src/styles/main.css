@@ -14,9 +14,8 @@
 
 .main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: repeat(auto-fit, 350px);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(100%, max(300px, 100%/5))));
+    grid-auto-rows: 350px;
     justify-content: center;
     width: 80%;
     margin: 20px auto;

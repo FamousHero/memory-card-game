@@ -21,6 +21,7 @@ const Card = ({src, handleSetCards, pickedCards, incrementScore, resetScore}) =>
     <div className={'card'} onClick={clickFunc}>
         <div className={'inner-card'}>
             <img src= {src} alt='' className='img'/>
+            <p className='name'>Test Name</p>
         </div>
     </div>
   )

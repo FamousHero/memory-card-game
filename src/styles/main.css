@@ -1,17 +1,16 @@
 
 .card{
     width: fit-content;
-    height: 150px;
+    height: 285px;
     padding: 20px;
     background-color: darkblue;
     border-radius: 5px;
+    position: relative;
+}
+.card:hover{
+    background-color:forestgreen;
 }
 
-.inner-card{
-    height: 110px;
-    background-color: aqua;
-    border-radius: 5px;
-}
 
 .main{
     display: flex;
@@ -19,7 +18,19 @@
     gap: 8px;
 }
 .img{
-    width: 100px;
+    width: 200px;
     object-fit: cover;
-    height: 100px;
+    height: 200px;
+}
+.name{
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1.3em;
+    color: rgb(116, 79, 30);
+    font-weight: 600;
 }

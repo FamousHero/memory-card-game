@@ -34,7 +34,7 @@ function App() {
     {
       setHighScore(oldhs=>score);
     }
-  }, [score])
+  }, [score, highScore])
 
 
 

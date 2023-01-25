@@ -19,7 +19,7 @@ const Main = ({incrementScore,toggleGameOver, gameOver}) => {
     const images = useMemo(()=>{
         let result = {};
         function importAll(context){
-            context.keys().map((key)=>{
+            context.keys().forEach((key)=>{
                 result[key.replace('./','').replace('.jpg', '')] = context(key);
             });
             return result;

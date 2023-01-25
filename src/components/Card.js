@@ -1,46 +1,30 @@
 
 import React from 'react'
 
-const Card = ({src, handleSetCards, pickedCards, incrementScore, resetScore}) => {
-    const clickFunc = ()=>{
-        console.log('generating new cards');
-        if(pickedCards.has(src)){
-            console.log('resetting');
-            pickedCards.clear();
-            resetScore();
-            handleSetCards();
-        }
-        else{
-            console.log('not in set...Continuing');
-            pickedCards.add(src);
-            handleSetCards();
-            incrementScore();
-        }
-    }
+const Card = ({name, src,clickFunc}) => {
+    console.log('rendering card ', name);
   return (
-    <div className={'card'} onClick={clickFunc}>
-        <div className={'inner-card'}>
-            <img src= {src} alt='' className='img'/>
-            <p className='name'>Test Name</p>
-        </div>
+    <div className={'card'} onClick={()=>{clickFunc(src)}}>
+        <img src= {src} alt='' className='img'/>
+        <p className='name'>{name.replace('-', ' ')}</p>
     </div>
   )
 }
 
 export default Card
 
-export const createCards = (images, handleSetCards, pickedCards, incrementScore, resetScore) => {
+export const createCards = (images, clickFunc) => {
     let cardArray = [];
     let imageArr = Object.keys(images);
     for(let i = 0; i < 10; ++i){
         let imageIndex = Math.floor(Math.random() * imageArr.length);
-        let image = imageArr[imageIndex];
+        let name = imageArr[imageIndex];
         cardArray.push(
-        <Card key={i} src={images[image]} pickedCards={pickedCards} handleSetCards={handleSetCards}
-            incrementScore={incrementScore} resetScore={resetScore}
+        <Card key={i} name={name} src={images[name]} clickFunc={clickFunc}
         />);
         imageArr.splice(imageIndex, 1);
     }
+    console.log('done rendering');
     return cardArray;
 }
 

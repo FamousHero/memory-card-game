@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import '../styles/header.css'
 
-const Header = ({score, incrementScore}) => {
-    const [highScore, setHighScore] = useState(0);
+const Header = ({score, highScore, handleHighScore}) => {
     useEffect(()=>{
         let prevHighScore = localStorage.getItem('highScore');
-        console.log(prevHighScore);
         if(prevHighScore){
-            setHighScore(prevHighScore);
+            handleHighScore(prevHighScore);
         }
     }, [])
     useEffect(()=>{
@@ -17,10 +15,9 @@ const Header = ({score, incrementScore}) => {
     
     }, [highScore])
     useEffect(()=>{
-        console.log('running');
         if(score > highScore)
         {
-            setHighScore(score);
+            handleHighScore(score);
 
         }
     }, [score])

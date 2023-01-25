@@ -31,7 +31,8 @@ function App() {
     <div className="App">
       <Header score={score} highScore={highScore} 
       handleNewHighScore={handleNewHighScore} handleHighScore={handleHighScore} />
-      <Main incrementScore={handleScore} toggleGameOver={toggleGameOver} />
+      <Main incrementScore={handleScore} toggleGameOver={toggleGameOver} 
+      gameOver={gameOver} />
       {gameOver? <GameOverOverlay score={score} highScore={highScore} newHighScore={newHighScore}/>:null};
     </div>
   );

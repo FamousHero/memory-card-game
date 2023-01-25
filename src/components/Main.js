@@ -2,7 +2,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import {createCards} from './Card'
 import '../styles/main.css'
-const Main = ({incrementScore,toggleGameOver}) => {
+const Main = ({incrementScore,toggleGameOver, gameOver}) => {
     const [cards, setCards] = useState([]);
     let pickedCards = new Set(); //doesnt affect render so don't use state
     const images = useMemo(()=>{
@@ -27,9 +27,10 @@ const Main = ({incrementScore,toggleGameOver}) => {
         }
     }
     useEffect(() => {
-        setCards(createCards(images, clickFunc));
+        if(!gameOver)
+            setCards(createCards(images, clickFunc));
         
-    }, []);
+    }, [gameOver]);
     const handleSetCards=() =>{
         setCards(createCards(images, clickFunc))
     }

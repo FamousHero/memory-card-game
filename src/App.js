@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import './App.css';
+import { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import GameOverOverlay from './components/GameOverOverlay';
@@ -10,6 +9,7 @@ function App() {
   const [gameOver, setGameOver] = useState(false);
   const [newHighScore, setNewHighScore] = useState(false);
 
+  //localStorage.setItem('highScore', 0);
   const handleScore = (newScore)=>{
     setScore(score=>score+1);  }
 

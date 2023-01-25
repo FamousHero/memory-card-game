@@ -1,7 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from 'react'
 import {createCards} from './Card'
-import '../styles/main.css'
 const Main = ({incrementScore,toggleGameOver, gameOver}) => {
     const [cards, setCards] = useState([]);
     let pickedCards = new Set(); //doesnt affect render so don't use state

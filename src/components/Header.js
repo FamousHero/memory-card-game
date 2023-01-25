@@ -1,5 +1,4 @@
 import React, { useEffect} from 'react'
-import '../styles/header.css'
 
 const Header = ({score, highScore, handleHighScore, handleNewHighScore}) => {
     useEffect(()=>{

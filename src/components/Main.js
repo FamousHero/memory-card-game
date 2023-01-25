@@ -12,7 +12,7 @@ const Main = ({incrementScore,toggleGameOver, gameOver}) => {
             });
             return result;
         }
-        return importAll(require.context('../imgs', false, /\.jpg/));
+        return importAll(require.context('../assets/imgs', false, /\.jpg/));
     }, []);
     const clickFunc = (src)=>{
         if(pickedCards.has(src)){

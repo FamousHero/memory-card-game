@@ -1,28 +1,7 @@
-import React, { useEffect} from 'react'
+import React from 'react'
 
-const Header = ({score, highScore, handleHighScore, handleNewHighScore}) => {
-    useEffect(()=>{
-        let prevHighScore = localStorage.getItem('highScore');
-        if(prevHighScore){
-            handleHighScore(prevHighScore);
-        }
-    }, [])
-    useEffect(()=>{
-        let oldHS = localStorage.getItem('highScore');
-        if(highScore > oldHS)
-        {
-            localStorage.setItem('highScore', highScore);
-            handleNewHighScore();
-        }
-    
-    }, [highScore])
-    useEffect(()=>{
-        if(score > highScore)
-        {
-            handleHighScore(score);
+const Header = ({score, highScore}) => {
 
-        }
-    }, [score])
   return (
     <header className='header'>
         <div className='scores'>Score: {score}</div>

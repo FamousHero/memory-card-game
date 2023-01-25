@@ -1,9 +1,21 @@
 
 import React, { useEffect, useMemo, useState } from 'react'
 import {createCards} from './Card'
+
+
 const Main = ({incrementScore,toggleGameOver, gameOver}) => {
-    const [cards, setCards] = useState([]);
+    /**setCards doesn't create a new list of cards, it
+    * instead updates the cards with the new values from createCards.
+    * Think of components as html. if the old value was 
+    * <div class="someClass">Text</div>
+    * and the new value is
+    * <div class="someClass">New Text</div>
+    * why create a whole new div, react sees this and instead updates the old div
+    * to contain the new values
+    */
     let pickedCards = new Set(); //doesnt affect render so don't use state
+
+    const [cards, setCards] = useState([]);
     const images = useMemo(()=>{
         let result = {};
         function importAll(context){
@@ -14,6 +26,13 @@ const Main = ({incrementScore,toggleGameOver, gameOver}) => {
         }
         return importAll(require.context('../assets/imgs', false, /\.jpg/));
     }, []);
+
+    useEffect(() => {
+        if(!gameOver)
+            setCards(createCards(images, clickFunc));
+        
+    }, [gameOver, images]);
+
     const clickFunc = (src)=>{
         if(pickedCards.has(src)){
             toggleGameOver(true);
@@ -21,18 +40,11 @@ const Main = ({incrementScore,toggleGameOver, gameOver}) => {
         }
         else{
             pickedCards.add(src);
-            handleSetCards();
+            setCards(createCards(images, clickFunc));
             incrementScore();
         }
     }
-    useEffect(() => {
-        if(!gameOver)
-            setCards(createCards(images, clickFunc));
-        
-    }, [gameOver]);
-    const handleSetCards=() =>{
-        setCards(createCards(images, clickFunc))
-    }
+
   return (
     <div className='main'>
         {cards}

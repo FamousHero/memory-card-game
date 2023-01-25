@@ -2,6 +2,7 @@
 import React from 'react'
 
 const Card = ({name, src,clickFunc}) => {
+  console.log(`rendering ${name}`);
   return (
     <div className={'card'} onClick={()=>{clickFunc(src)}}>
         <img src= {src} alt='' className='img'/>

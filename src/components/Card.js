@@ -2,7 +2,6 @@
 import React from 'react'
 
 const Card = ({name, src,clickFunc}) => {
-    console.log('rendering card ', name);
   return (
     <div className={'card'} onClick={()=>{clickFunc(src)}}>
         <img src= {src} alt='' className='img'/>
@@ -24,7 +23,6 @@ export const createCards = (images, clickFunc) => {
         />);
         imageArr.splice(imageIndex, 1);
     }
-    console.log('done rendering');
     return cardArray;
 }
 

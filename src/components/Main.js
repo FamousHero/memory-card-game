@@ -17,7 +17,8 @@ const Main = ({incrementScore,toggleGameOver}) => {
     }, []);
     const clickFunc = (src)=>{
         if(pickedCards.has(src)){
-            toggleGameOver(true);   
+            toggleGameOver(true);
+            pickedCards.clear();   
         }
         else{
             pickedCards.add(src);

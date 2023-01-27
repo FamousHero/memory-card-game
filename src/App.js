@@ -49,12 +49,14 @@ function App() {
   }
 
   const toggleGameOver = ()=>{
-    setGameOver(oldState=>!oldState);
-    setTimeout(()=>{
-      setGameOver(oldState=>!oldState);
-      resetScore(); 
-      setNewHighScore(false);         
-    }, 1000);
+    setGameOver(true);
+  }
+
+  const newGameFunc = ()=>{
+    setTimeout(()=>{setGameOver(false);
+    resetScore(); 
+    setNewHighScore(false);
+    }, 10)
   }
 
   return (
@@ -62,7 +64,8 @@ function App() {
       <Header scores={scores} />
       <Main handleScore={handleScore} toggleGameOver={toggleGameOver} 
       gameOver={gameOver} />
-      {gameOver? <GameOverOverlay scores={scores} newHighScore={newHighScore}/>:null};
+      {gameOver? <GameOverOverlay scores={scores} newHighScore={newHighScore}
+      newGameFunc={newGameFunc} />:null};
     </div>
   );
 }

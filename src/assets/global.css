@@ -138,3 +138,16 @@ align-items: center;
   background-color: rgba(0, 255, 13, 0.35);
 }
 
+#new-game{
+  padding: 10px;
+  margin-top: 40px;
+  font-size: .5em;
+
+}
+#new-game:hover{
+  background-color: #a0a0a0;
+}
+
+#new-game:active{
+  margin-top: 45px;
+}

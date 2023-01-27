@@ -2,12 +2,12 @@
 
 import React from 'react'
 
-const GameOverOverlay = ({score, highScore, newHighScore}) => {
+const GameOverOverlay = ({scores, newHighScore}) => {
   return newHighScore?
     (<div className='game-over green'>
         <div id='new-high-score'>
             New High Score
-            <div>{highScore}</div>
+            <div>{scores.highScore}</div>
         </div>
         
     </div>):
@@ -15,8 +15,8 @@ const GameOverOverlay = ({score, highScore, newHighScore}) => {
     (<div className='game-over red'>
         Game Over
         <div id='end-scores'>
-            <div>Score: {score}</div>
-            <div>High Score: {highScore}</div>
+            <div>Score: {scores.score}</div>
+            <div>High Score: {scores.highScore}</div>
         </div>
     </div>)
 }

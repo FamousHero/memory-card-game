@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import {createCards} from './Card'
 
 
-const Main = ({incrementScore,toggleGameOver, gameOver}) => {
+const Main = ({handleScore,toggleGameOver, gameOver}) => {
     /**setCards doesn't create a new list of cards, it
     * instead updates the cards with the new values from createCards.
     * Think of components as html. if the old value was 
@@ -41,7 +41,7 @@ const Main = ({incrementScore,toggleGameOver, gameOver}) => {
         else{
             pickedCards.add(src);
             setCards(createCards(images, clickFunc));
-            incrementScore();
+            handleScore();
         }
     }
 

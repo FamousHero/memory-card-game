@@ -9,8 +9,7 @@ function App() {
     score: 0,
     highScore: 0,
   })
-  const [score, setScore] = useState(0);
-  const [highScore, setHighScore] = useState(0);
+
   const [gameOver, setGameOver] = useState(false);
   const [newHighScore, setNewHighScore] = useState(false);
 
@@ -19,7 +18,7 @@ function App() {
   useEffect(()=>{
     let prevHighScore = localStorage.getItem('highScore');
     if(prevHighScore){
-      setScores(oldState=>{return {...oldState, highScore: prevHighScore}});
+      setScores(oldState=>{return {...oldState, highScore: Number(prevHighScore)}});
       }
   }, [])
 
@@ -33,7 +32,7 @@ function App() {
         {
           let currHighScore = oldscores.highScore+1;
           if(currHighScore > localStorage.getItem('highScore')){
-            
+            console.log(currHighScore);
             localStorage.setItem('highScore', currHighScore);
             setNewHighScore(true);
           }

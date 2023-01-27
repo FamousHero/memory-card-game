@@ -96,6 +96,13 @@ align-items: center;
   flex-direction: column;
   font-weight: 600;
   padding-top: 30vh;
+  text-shadow:
+  /* White glow */
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  /* Green glow */
+  0 0 151px #fff;
 
 }
 
@@ -103,6 +110,10 @@ align-items: center;
   display: flex;
   justify-content: space-around;
   width: 100%;
+
+
+
+  
 }
 #new-high-score{
   gap: 100px;
@@ -120,10 +131,10 @@ align-items: center;
     0 0 151px gold;
 }
 .red{
-  background-color: rgba(255, 0, 0, 0.253);
+  background-color: rgba(255, 0, 0, 0.35);
 
 }
 .green{
-  background-color: rgba(0, 255, 13, 0.253);
+  background-color: rgba(0, 255, 13, 0.35);
 }
 

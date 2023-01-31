@@ -61,6 +61,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className='background'></div>
       <Header scores={scores} />
       <Main handleScore={handleScore} toggleGameOver={toggleGameOver} 
       gameOver={gameOver} />

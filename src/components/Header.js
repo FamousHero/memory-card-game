@@ -1,12 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const Header = ({scores}) => {
 
   const [mobileView, setMobileView] = useState(window.innerWidth);
-  window.addEventListener('resize', ()=>{
+  
+  
+  useEffect(()=>{
+    window.addEventListener('resize', ()=>{
     setMobileView(oldsize=>window.innerWidth)
-  });
-  console.log(mobileView);
+    })
+  }, []);
+
   return (
     <header className='header'>
         {mobileView < 1000? <><div className='title'>Memory Card</div>

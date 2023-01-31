@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.54e5eef0.css",
-    "main.js": "/memory-card/static/js/main.9a4737a9.js",
+    "main.css": "/memory-card/static/css/main.eb62c072.css",
+    "main.js": "/memory-card/static/js/main.5114c494.js",
     "static/media/Yummy.jpg": "/memory-card/static/media/Yummy.e0c608d385fa7a90ae9c.jpg",
     "static/media/Avocado.jpg": "/memory-card/static/media/Avocado.7ea967f6ef65e26da73c.jpg",
     "static/media/Daisy's-Mom.jpg": "/memory-card/static/media/Daisy's-Mom.14e3bc5b5e398cb12b32.jpg",
+    "static/media/UCI.jpg": "/memory-card/static/media/UCI.cc513e46046876c7382e.jpg",
     "static/media/Fashion-Nova.jpg": "/memory-card/static/media/Fashion-Nova.ba7fea67522349d217a3.jpg",
     "static/media/Kbbq.jpg": "/memory-card/static/media/Kbbq.6b996fba59e7ae3dbeb5.jpg",
     "static/media/Daisy.jpg": "/memory-card/static/media/Daisy.18d25d2bb099fbe113d4.jpg",
@@ -23,11 +24,11 @@
     "static/media/IU.jpg": "/memory-card/static/media/IU.02a8df5bce221b0adecc.jpg",
     "static/media/Case.jpg": "/memory-card/static/media/Case.aa91eb6b4c7e9d88eccd.jpg",
     "index.html": "/memory-card/index.html",
-    "main.54e5eef0.css.map": "/memory-card/static/css/main.54e5eef0.css.map",
-    "main.9a4737a9.js.map": "/memory-card/static/js/main.9a4737a9.js.map"
+    "main.eb62c072.css.map": "/memory-card/static/css/main.eb62c072.css.map",
+    "main.5114c494.js.map": "/memory-card/static/js/main.5114c494.js.map"
   },
   "entrypoints": [
-    "static/css/main.54e5eef0.css",
-    "static/js/main.9a4737a9.js"
+    "static/css/main.eb62c072.css",
+    "static/js/main.5114c494.js"
   ]
 }

@@ -1,34 +1,38 @@
 {
   "files": {
     "main.css": "/memory-card-game/static/css/main.cfa50106.css",
-    "main.js": "/memory-card-game/static/js/main.59258ff5.js",
+    "main.js": "/memory-card-game/static/js/main.c3e60687.js",
     "static/media/Yummy.jpg": "/memory-card-game/static/media/Yummy.e0c608d385fa7a90ae9c.jpg",
     "static/media/Avocado.jpg": "/memory-card-game/static/media/Avocado.7ea967f6ef65e26da73c.jpg",
     "static/media/Daisy's-Mom.jpg": "/memory-card-game/static/media/Daisy's-Mom.14e3bc5b5e398cb12b32.jpg",
     "static/media/UCI.jpg": "/memory-card-game/static/media/UCI.cc513e46046876c7382e.jpg",
     "static/media/Fashion-Nova.jpg": "/memory-card-game/static/media/Fashion-Nova.ba7fea67522349d217a3.jpg",
+    "static/media/Grape-Drink.jpg": "/memory-card-game/static/media/Grape-Drink.d31d1d685df01fb56131.jpg",
     "static/media/Kbbq.jpg": "/memory-card-game/static/media/Kbbq.6b996fba59e7ae3dbeb5.jpg",
     "static/media/Daisy.jpg": "/memory-card-game/static/media/Daisy.18d25d2bb099fbe113d4.jpg",
+    "static/media/Best-Doggo.jpg": "/memory-card-game/static/media/Best-Doggo.f7ddfce22dcbc89d20cf.jpg",
     "static/media/Aye-Yo.jpg": "/memory-card-game/static/media/Aye-Yo.6791451b489335a06e8c.jpg",
     "static/media/No-Eyes.jpg": "/memory-card-game/static/media/No-Eyes.6bbe8a87366072767fbd.jpg",
     "static/media/Therapist.jpg": "/memory-card-game/static/media/Therapist.97a70b2a00394ce848d6.jpg",
     "static/media/3-Leg.jpg": "/memory-card-game/static/media/3-Leg.787698abeb4aee398ff7.jpg",
     "static/media/Kobe.jpg": "/memory-card-game/static/media/Kobe.236a7604b8ed3e5b3ada.jpg",
     "static/media/Korea.jpg": "/memory-card-game/static/media/Korea.c4d68decdca26f9eddf2.jpg",
+    "static/media/Takumi-AE86.jpg": "/memory-card-game/static/media/Takumi-AE86.426963e04a6366fa49c2.jpg",
     "static/media/Turtle.jpg": "/memory-card-game/static/media/Turtle.8e45962a6196268fbe88.jpg",
     "static/media/Selena.jpg": "/memory-card-game/static/media/Selena.20581446beeab9f0b558.jpg",
     "static/media/Gymshark.jpg": "/memory-card-game/static/media/Gymshark.75dbc2b908bce02d9724.jpg",
     "static/media/IT.jpg": "/memory-card-game/static/media/IT.30bc54064f67954d6756.jpg",
     "static/media/Bell-Pepper.jpg": "/memory-card-game/static/media/Bell-Pepper.0bb10658eade383ea19b.jpg",
+    "static/media/Material-Girl.jpg": "/memory-card-game/static/media/Material-Girl.6c71087842e312f1adab.jpg",
     "static/media/Ditto.jpg": "/memory-card-game/static/media/Ditto.bf03b61c2bdb1b504a15.jpg",
     "static/media/IU.jpg": "/memory-card-game/static/media/IU.02a8df5bce221b0adecc.jpg",
     "static/media/Case.jpg": "/memory-card-game/static/media/Case.aa91eb6b4c7e9d88eccd.jpg",
     "index.html": "/memory-card-game/index.html",
     "main.cfa50106.css.map": "/memory-card-game/static/css/main.cfa50106.css.map",
-    "main.59258ff5.js.map": "/memory-card-game/static/js/main.59258ff5.js.map"
+    "main.c3e60687.js.map": "/memory-card-game/static/js/main.c3e60687.js.map"
   },
   "entrypoints": [
     "static/css/main.cfa50106.css",
-    "static/js/main.59258ff5.js"
+    "static/js/main.c3e60687.js"
   ]
 }
